@@ -1,0 +1,223 @@
+// Global Styles
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f0f4f8 0%, #e9ecef 100%);
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.02em;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 800;
+  color: #007bff;
+  letter-spacing: 0.03em;
+}
+
+// Form Styles
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+  background: #fff;
+  font-size: 1.05rem;
+  padding: 0.75rem 1rem;
+
+  &:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+    background: #f8fbff;
+  }
+}
+
+.form-label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.form-check-input {
+  &:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+}
+
+.form-check-label {
+  font-weight: 500;
+  color: #495057;
+}
+
+// Button Styles
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.07);
+
+  &.btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+
+    &:hover {
+      background: linear-gradient(135deg, #0056b3, #004085);
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 4px 16px rgba(0, 123, 255, 0.18);
+    }
+  }
+
+  &.btn-success {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    border: none;
+
+    &:hover {
+      background: linear-gradient(135deg, #1e7e34, #155724);
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 4px 16px rgba(40, 167, 69, 0.18);
+    }
+  }
+
+  &.btn-danger {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    border: none;
+
+    &:hover {
+      background: linear-gradient(135deg, #c82333, #a71e2a);
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 4px 16px rgba(220, 53, 69, 0.18);
+    }
+  }
+}
+
+// Modal Styles
+.modal-content {
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 14px 14px 0 0;
+}
+
+.modal-title {
+  font-weight: 700;
+  color: #495057;
+}
+
+// Card Styles
+.card {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  &:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+  }
+}
+
+.card-body {
+  padding: 1.7rem;
+  background: #fcfcfc;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+// Input Group Styles
+.input-group {
+  .form-control {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .btn {
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+// Row and Column Spacing
+.row {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.col-md-4,
+.col-md-6,
+.col-12 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .form-control {
+    font-size: 16px; // Prevents zoom on iOS
+    padding: 0.7rem 0.8rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+  .card-body {
+    padding: 1.1rem;
+  }
+}
+
+// Animation Classes
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+
+  &:hover {
+    background: #a8a8a8;
+  }
+}
+
