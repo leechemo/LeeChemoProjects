@@ -10,3 +10,7 @@ The project is a Java-based delivery and workforce management system for a chain
 It includes modules for managing deliveries, drivers, HR managers, and company employees, with features such as creating and updating deliveries, 
 generating reports, managing employee shifts, and simulating daily operations. 
 The system uses SQLite for data storage and provides command-line menus for different user roles.
+
+Song Popularity Prediction – Machine Learning Project:
+Developed a machine learning pipeline to predict song popularity using audio features, metadata, and BERT-based lyric embeddings. 
+Applied advanced preprocessing, feature engineering, and model optimization (Random Forest, XGBoost), achieving 88% accuracy with Random Forest.
