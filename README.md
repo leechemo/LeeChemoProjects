@@ -12,6 +12,9 @@ It includes modules for managing deliveries, drivers, HR managers, and company e
 generating reports, managing employee shifts, and simulating daily operations. 
 The system uses SQLite for data storage and provides command-line menus for different user roles.
 
+Parallel text search engine in modern C++:
+This project enumerates files (optionally recursively), pushes them into a thread-safe task queue, and uses a worker thread pool to scan files in parallel for a given pattern (plain text or regex), with optional case-insensitive matching, binary-file skipping, extension filters, and a stop-on-first shortcut. Each worker collects matches locally and a central stage merges results efficiently, supporting clean cancellation via an atomic flag. Results can be exported in multiple formats—human-readable table, CSV, or JSON. The code is modular: FileEnumerator (collect files with std::filesystem), FileScanner (line-by-line search), ThreadSafeQueue (mutex + condition_variable), WorkerPool (threads + merging), OutputWriter (formatting), and SearchConfig (CLI options).
+
 Song Popularity Prediction – Machine Learning Project:
 Developed a machine learning pipeline to predict song popularity using audio features, metadata, and BERT-based lyric embeddings. 
 Applied advanced preprocessing, feature engineering, and model optimization (Random Forest, XGBoost), achieving 88% accuracy with Random Forest.
