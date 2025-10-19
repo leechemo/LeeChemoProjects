@@ -1,7 +1,64 @@
-Recipes Project — Client-Server Side Programming: This project is a full-stack web application for managing recipes. It includes user authentication, personal and family recipe creation, favorites, and meal planning features. The backend uses Node.js, Express, and MySQL, while the frontend is built with Vue.js and Bootstrap-Vue for responsive design. It also integrates with an external recipes API (Spoonacular) to fetch and display additional recipe data. The system tracks user activity, such as viewed recipes and preparation progress. *** Recording is attached.
+# 🍲 Projects Portfolio
 
-Super-Li Project: The project is a Java-based delivery and workforce management system for a chain of stores. It includes modules for managing deliveries, drivers, HR managers, and company employees, with features such as creating and updating deliveries, generating reports, managing employee shifts, and simulating daily operations. The system uses SQLite for data storage and provides command-line menus for different user roles.
+## 🧁 Recipes Project — *Client–Server Side Programming*
+A full-stack web application for managing and sharing recipes.
 
-Parallel Text Search Engine in Modern C++: This project enumerates files (optionally recursively), pushes them into a thread-safe task queue, and uses a worker thread pool to scan files in parallel for a given pattern (plain text or regex), with optional case-insensitive matching, binary-file skipping, extension filters, and a stop-on-first shortcut. Each worker collects matches locally and a central stage merges results efficiently, supporting clean cancellation via an atomic flag. Results can be exported in multiple formats—human-readable table, CSV, or JSON. The code is modular: FileEnumerator (collect files with std::filesystem), FileScanner (line-by-line search), ThreadSafeQueue (mutex + condition_variable), WorkerPool (threads + merging), OutputWriter (formatting), and SearchConfig (CLI options).
+**Key Features**
+- User authentication and personal/family recipe management  
+- Favorites list and meal planning interface  
+- Integration with the **Spoonacular API** for external recipe data  
+- Real-time tracking of user activity (viewed recipes, preparation progress)  
 
-Song Popularity Prediction — Machine Learning Project: Developed a machine learning pipeline to predict song popularity using audio features, metadata, and BERT-based lyric embeddings. Applied advanced preprocessing, feature engineering, and model optimization (Random Forest, XGBoost), achieving 88% accuracy with Random Forest.
+**Tech Stack**
+- **Frontend:** Vue.js, Bootstrap-Vue (responsive SPA)  
+- **Backend:** Node.js, Express, MySQL  
+- **Other:** RESTful API design, session handling, and database utilities  
+
+📎 *Recording is attached.*
+
+---
+
+## 🚚 Super-Li Project
+A **Java-based delivery and workforce management system** for a chain of stores.
+
+**Key Features**
+- Manage deliveries, drivers, HR managers, and employees  
+- Create/update deliveries, manage shifts, and generate reports  
+- Simulate daily logistics operations  
+
+**Tech Stack**
+- **Language:** Java  
+- **Database:** SQLite  
+- **Interface:** Command-line menus for multiple user roles  
+
+---
+
+## ⚙️ Parallel Text Search Engine (Modern C++)
+A **multi-threaded search engine** for scanning large directories efficiently.
+
+**Highlights**
+- Recursively enumerates files using `std::filesystem`  
+- Thread-safe task queue and worker pool for parallel search  
+- Supports regex, case-insensitive search, and extension filters  
+- Graceful cancellation via atomic flags  
+- Exports results as table, CSV, or JSON  
+
+**Modules**
+`FileEnumerator`, `FileScanner`, `ThreadSafeQueue`, `WorkerPool`, `OutputWriter`, `SearchConfig`
+
+---
+
+## 🎵 Song Popularity Prediction — *Machine Learning Project*
+A predictive model estimating **song popularity** based on audio and lyrics data.
+
+**Process**
+- Combined **audio features**, **metadata**, and **BERT lyric embeddings**  
+- Applied preprocessing, feature engineering, and hyperparameter tuning  
+- Evaluated multiple models (Random Forest, XGBoost)  
+
+**Result**
+- Achieved **88% accuracy** with Random Forest  
+
+---
+
+✨ *Each project demonstrates practical engineering skills, modular design, and a focus on real-world problem solving.*
